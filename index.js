@@ -3,7 +3,7 @@ var katzDeliLine = [];
 function takeANumber(katzDeliLine, name){
   var i = katzDeliLine.length + 1;
   katzDeliLine.push(name);
-  return "Welcome, "+name+". You are number "+i+" in line";
+  return "Welcome, "+name+". You are number "+i+" in line.";
 }
 
 function nowServing(katzDeliLine){
@@ -20,8 +20,8 @@ function currentLine(katzDeliLine){
   } else {
     var str;
     for(var i=0; i<katzDeliLine.length; i++){
-      str = str + (i+1)+"."+katzDeliLine[i];
+      str = str + (i+1)+". "+katzDeliLine[i];
     }
-    return "The line is currently "+str;
+    return "The line is currently: "+str;
   }
 }
