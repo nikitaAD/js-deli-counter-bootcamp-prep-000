@@ -16,12 +16,12 @@ function nowServing(katzDeliLine){
 
 function currentLine(katzDeliLine){
    if(0 === katzDeliLine.length){
-    return "There is nobody in the line!";
+    return "The line is currently empty";
   } else {
     var str;
     for(var i=0; i<katzDeliLine.length; i++){
       str = str + "${i}.${katzDeliLine[i]}";
     }
-    return "The line is currently ${str}";
+    return "The line is currently "+${str};
   }
 }
